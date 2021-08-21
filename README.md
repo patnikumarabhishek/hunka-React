@@ -1,1 +1,1 @@
-# hunka-React
+# hunka-React frontend code
