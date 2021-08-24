@@ -7,13 +7,14 @@ import { connect } from 'react-redux';
 import { userActions } from '../../actions/userActions'
 import { permissionActions } from '../../actions/permissionActions'
 import { roleActions } from '../../actions/roleActions'
+import { clientActions } from '../../actions/clientActions';
 import { useHistory } from 'react-router';
 
 const Login = (props) => {
     const history = useHistory()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const { login, getuserProfileData, getPermissions, getRoles, token, status } = props
+    const { login, getuserProfileData, getPermissions, getClients, getRoles, token, status } = props
 
     useEffect(() => {
         if (token.length !== 0) {
@@ -22,6 +23,7 @@ const Login = (props) => {
             getuserProfileData(token)
             getPermissions(token)
             getRoles(token)
+            getClients(token)
         }
     },[token])
 
@@ -75,7 +77,8 @@ const mapActionsToProps = {
     login: userActions.login,
     getPermissions: permissionActions.getPermissions,
     getRoles: roleActions.getRoles,
-    getuserProfileData: userActions.getuserProfileData
+    getuserProfileData: userActions.getuserProfileData,
+    getClients: clientActions.getClients
 };
 
 const connectedLoginPage = connect(mapStateToProps, mapActionsToProps)(Login);
