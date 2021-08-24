@@ -69,7 +69,8 @@ const Login = (props) => {
 }
 
 function mapStateToProps(state) {
-    const { token, status } = state.user;
+    console.log(state)
+    const { token, status } = state.users;
     return { token,status };
 }
 

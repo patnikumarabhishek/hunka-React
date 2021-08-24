@@ -86,7 +86,7 @@ const Header = (props) => {
 }
 
 function mapStateToProps(state) {
-  const { status } = state.user;
+  const { status } = state.users;
   return { status };
 }
 
