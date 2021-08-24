@@ -9,12 +9,16 @@ import companyLogo from '../../images/logo.png'
 
 const Header = (props) => {
 
-  const { status } = props
-  console.log('status', status)
+  const { status, userProfileData } = props
   const onSearch = (e) => {
     e.preventDefault()
     console.log('search clicked')
   }
+
+  const logoutHandler = () => {
+    console.log('Logout clicked')
+  }
+
   return (
     <header>
       <div className="header_top">
@@ -35,6 +39,14 @@ const Header = (props) => {
                     <ul>
                       <li><Link to='/login'><img src={loginImg} alt="user-login-logo" /> Login </Link></li>
                       <li><Link to='/register'><img src={addUserImg} alt="user-registration-logo" /> Register</Link></li>
+                    </ul>
+                  )
+                }
+                {
+                  status === 'SUCCESS' && (
+                    <ul>
+                      <li>{`Welcome ${userProfileData?.fullname}`}</li>
+                      <li><button className="card-button" onClick={logoutHandler}>Logout</button></li>
                     </ul>
                   )
                 }
@@ -86,8 +98,10 @@ const Header = (props) => {
 }
 
 function mapStateToProps(state) {
+  console.log('state', state)
   const { status } = state.users;
-  return { status };
+  const { userProfileData } = state.userProfile
+  return { status, userProfileData };
 }
 
 const connectedHeader = connect(mapStateToProps, {})(Header);

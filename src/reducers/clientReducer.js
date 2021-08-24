@@ -8,7 +8,6 @@ const defaultState = {
 }
 
 export default (state = defaultState, action) => {
-    console.log('action', action)
     switch(action.type) {
         case clientConstants.GET_CLIENTS_REQUEST:
             return {

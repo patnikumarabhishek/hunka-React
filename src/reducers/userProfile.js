@@ -17,7 +17,7 @@ export default (state = defaultState, action) => {
             return {
                 ...state,
                 status: 'SUCCESS',
-                data: action.res.user,
+                userProfileData: action.res.user,
                 success: true
             }
         case userConstants.GET_PROFILE_DATA_FAILURE:
