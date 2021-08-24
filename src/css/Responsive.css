@@ -1,0 +1,447 @@
+ 
+ 
+ 
+ 
+@media (min-width: 1068px) {
+ 
+    .contact {
+      flex-direction: row;
+    }
+  
+    .contact-form {
+      width: calc(100% - 400px);
+      padding: 60px 40px 20px;
+    }
+  
+    .contact-form .row {
+      flex-direction: row;
+    }
+  
+    .contact-form .input50 {
+      width: 50%;
+      margin: 0 10px;
+    }
+  
+    .contact-form .input100 {
+      margin: 0 10px;
+    }
+  
+    .contact-info {
+      width: 350px;
+      margin-top: 0;
+      padding: 60px 40px 20px;
+    }
+  }
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   @media (min-width: 992px) and (max-width: 1200px) {
+   header .nav-item {
+   margin: 0 5px;
+   padding: 0 0 0 7px;
+  }
+  header .nav-item a {
+   font-size: 14px;
+   padding: 7px 3px 5px;
+  }
+  .search_top_header {
+   width: 22%;
+   padding: 0px 0 0 14px;
+  }
+  .our-services .section-heading h2 {
+   margin-right: 0;
+  }
+  }
+   @media (min-width: 768px) and (max-width: 991px) {
+   header .header_top ul li a {
+   font-size: 14px;
+  }
+  header .header_top .login_top ul li a {
+   font-size: 14px;
+  }
+  header .header_top .login_top ul li {
+   padding: 2px 0;
+   margin: 0 0 0 9px;
+  }
+  header .header_top .a_icon {
+   padding: 5px 0 5px 0;
+  }
+  header .header_top .login_top {
+   padding: 5px 0 5px 4px;
+  }
+   header .navbar img {
+   width: 130px;
+  }
+  header .nav-item {
+   padding: 0 0 0;
+  margin: 0 3px;
+  }
+  header .nav-item a {
+   font-size: 12px;
+   padding: 7px 2px 5px;
+  }
+  .search_top_header {
+   width: 19%;
+   padding: 0px 0 0 5px;
+  }
+  header .header_bottom {
+   padding: 10px 0;
+  }
+   .banner_home h2 {
+   font-size: 30px;
+  }
+   .banner_home h3 {
+   font-size: 22px;
+   padding: 0px 0 5px;
+  }
+   .banner_home p {
+   font-size: 15px;
+   color: #000;
+  }
+  .banner_home .request_demo {
+   padding: 20px 0 0 0px;
+  }
+  .our-services .left-image {
+   text-align: center;
+   margin: auto;
+  }
+  .left-image img {
+   width: 100%;
+   text-align: center;
+   margin: auto;
+  }
+  .our-services {
+   padding-top: 20px;
+  }
+   .our-services .section-heading h2 {
+   margin-right: 0;
+   font-size: 26px;
+   margin: 0;
+   padding: 0;
+  }
+  .our-services .section-heading p {
+   margin-top: 10px;
+   font-size: 14px;
+  margin-bottom:40px;
+  }
+   .our-services .progress-skill-bar h4 {
+   font-size: 14px;
+   margin-bottom: 12px;
+  }
+  .our-services .progress-skill-bar span {
+   font-size: 14px;
+  }
+   .about-us .left-image img {
+   width: 200px;
+  }
+  .about-us {
+   padding: 90px 0px 90px 0px;
+  }
+  .section-title h2 {
+   font-size: 30px;
+  }
+  .contact-us .section-heading h2, .contact-us .section-heading h2 em, .contact-us .section-heading h2 span {
+   font-size: 28px;
+  text-align: center
+  }
+  .contact-us .section-heading p {
+   color: #fff;
+   margin-top: 10px;
+   text-align: center;
+  }
+   .phone-info {
+   margin-top: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+  }
+  form#contact {
+   padding: 40px 20px;
+   border-radius: 10px;
+  }
+   .contact-us {
+   padding: 70px 0px;
+  }
+  .phone-info h4 span {
+   display: block;
+   padding: 20px;
+  }
+  }
+   @media only screen and (max-width: 767.5px) {
+   header .nav-item {
+   padding: 0 0 0 9px;
+  }
+  header .navbar ul {
+   top: 71px !important;
+  }
+  header .nav-item {
+   margin: 0px 0 !important;
+  }
+  header .navbar li {
+   padding: 10px !important;
+  }
+  header .navbar li:first-child {
+   margin-top: 0 !important;
+  }
+  header .nav-item a {
+   border-bottom: 2px solid #000;
+   float: left;
+   text-align: left;
+   width: 100%;
+  }
+   header .features {
+   flex-direction: column;
+   padding: 50px;
+  }
+   header .navbar ul {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   justify-content: start;
+   top: 55px;
+   background-color: #fff;
+   width: 100%;
+   height: calc(100vh - 55px);
+   transform: translate(-101%);
+   text-align: center;
+   overflow: hidden;
+   right: 0;
+  }
+  header .navbar li {
+   padding: 15px;
+  }
+  header .navbar li:first-child {
+   margin-top: 50px;
+  }
+  header .navbar li a {
+   font-size: 1rem;
+  }
+  header .menu-toggle, .bar {
+   display: block;
+   cursor: pointer;
+  }
+  header .mobile-nav {
+   transform: translate(0%)!important;
+  }
+  .search_top_header {
+   padding: 10px 20px 0;
+   position: relative;
+  }
+  .search_top_header button {
+   right: 31px;
+  top: 12px;
+  }
+  .destop_search {
+  display:none;
+  }
+   .mobile_search {
+  display: inline-block;
+  }
+   header .header_top ul {
+   text-align: center;
+  }
+  header .header_top ul li {
+   padding: 0;
+  }
+  header .header_top ul li a {
+   font-size: 10px;
+   text-align: center;
+   margin: auto;
+  }
+  header .header_top .mailbx {
+   display: inline-block;
+   padding: 0 3px 0 0;
+  }
+  header .header_top .login_top ul li a {
+   font-size: 10px;
+  }
+  header .header_top .login_top ul li {
+   margin: 0 0 0 8px;
+  padding: 0px 0;
+  }
+  header .header_top .login_top {
+   padding: 0px 0 0px 0px;
+  }
+  header .navbar img {
+   width: 115px;
+  }
+  header .header_bottom {
+   padding: 7px 0;
+  }
+  .a_icon {
+  display:none;
+  }
+  header .header_top .login_top ul li a img {
+   width: 13px;
+  }
+  header .header_top {
+   padding: 0px 0 6px;
+  }
+  header .menu-toggle {
+   margin-right: 0;
+  }
+   .banner_home h2 {
+   font-size: 18px;
+  }
+  .banner_home h3 {
+   font-size: 16px;
+   padding: 0px 0 0px;
+  margin: 0;
+  }
+  .banner_home p {
+   margin: 3px 0;
+  }
+   .banner_home p {
+   font-size: 12px;
+  }
+  .banner_home_text {
+   top: 5%;
+  }
+  .banner_home .request_demo {
+   text-align: left;
+   width: 100%;
+   padding: 0;
+  }
+  .banner_home .request_demo a {
+   padding: 5px 17px;
+   border-radius: 50px;
+   font-size: 11px;
+  }
+   .banner_home .owl-carousel.main-carousel .owl-dots .owl-dot {
+   width: 10px;
+   height: 10px;
+  }
+  .banner_home .owl-carousel.main-carousel .owl-dots {
+   bottom: 24px;
+  }
+  .our-services .left-image {
+   text-align: center;
+   margin: auto;
+  }
+  .left-image img {
+   width: 100%;
+   text-align: center;
+   margin: auto;
+  }
+   .our-services .section-heading h2 {
+   margin-right: 0;
+   font-size: 22px;
+   padding: 20px 0 0 0;
+   text-align: center;
+  }
+  .our-services .section-heading p {
+   margin-top: 10px;
+   margin-bottom: 30px;
+   font-size: 14px;
+   text-align: justify;
+  }
+  .our-services .progress-skill-bar h4 {
+   font-size: 14px;
+  }
+  .our-services .progress-skill-bar span {
+   font-size: 14px;
+  }
+  .about-us .left-image img {
+   display: none;
+  }
+  .about-us {
+   padding: 100px 0px 90px 0px;
+  }
+  .section-title h2 {
+   font-size: 22px;
+  }
+  .section-title p {
+   padding-bottom: 9px;
+   margin-bottom: 4px;
+   font-size: 14px;
+  }
+  .services .title {
+   margin-bottom: 6px;
+   font-size: 16px;
+  }
+  .services .description {
+   font-size: 14px;
+   line-height: 22px;
+  }
+  .services .icon-box {
+   padding: 20px;
+   margin: 0 0 20px 0;
+  }
+   .contact-us {
+   padding: 90px 0px;
+  }
+   .contact-us .section-heading h2, .contact-us .section-heading h2 em, .contact-us .section-heading h2 span {
+   font-size: 22px;
+  }
+  .contact-us .section-heading p {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 14px;
+  }
+   .phone-info h4 span {
+   display: block;
+   text-align: center;
+  }
+   .phone-info h4 {
+   font-size: 16px;
+   font-weight: 700;
+   color: #fff;
+   display: block;
+   text-align: center;
+  }
+  .phone-info h4 span i {
+   width: 26px;
+   height: 26px;
+   line-height: 26px;
+   font-size: 15px;
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 13px;
+   margin-bottom: 20px;
+  }
+  form#contact {
+   margin-left: 0;
+   position: relative;
+   background-color: #fff;
+   padding: 30px 20px;
+   border-radius: 10px;
+  }
+  fieldset {
+   text-align: center;
+  }
+  form#contact button {
+   font-size: 14px;
+   padding: 12px 25px;
+  }
+  #footer .footer-newsletter {
+   padding: 0px 0 50px;
+   font-size: 15px;
+  }
+  #footer .footer-newsletter h4 {
+   font-size: 22px;
+  }
+  #footer .footer-newsletter p {
+   color: #000;
+   font-size: 14px;
+  }
+   #footer .footer-top {
+   padding: 30px 0 20px 0;
+  }
+   #footer .copyright, #footer .credits {
+   float: none;
+   -moz-text-align-last: center;
+   text-align-last: center;
+   padding: 3px 0;
+  }
+  #footer {
+   padding: 0 0 0 0;
+  }
+  }
+   @media (max-width: 575.5px) {
+  }
+  
