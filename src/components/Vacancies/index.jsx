@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux';
+import { vacanciesActions } from '../../actions/vacanciesActions'
 const Vacancies = () => {
     return (
         <section className="middle_wraper">
@@ -81,4 +83,15 @@ const Vacancies = () => {
     )
 }
 
-export default Vacancies
+function mapStateToProps(state) {
+    console.log(state)
+    const { token, status } = state.vacancies;
+    return { token,status };
+}
+
+const mapActionsToProps = {
+    getVacancies: vacanciesActions.getVacanciesAction
+};
+
+const connectedVacancies = connect(mapStateToProps, mapActionsToProps)(Vacancies);
+export { connectedVacancies as Vacancies };
