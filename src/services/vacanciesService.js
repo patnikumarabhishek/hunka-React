@@ -9,7 +9,7 @@ function getVacancies(token) {
         headers: { Authorization: `Bearer ${token}`}
     };
 
-    return axios.get('http://localhost:8000/api/vacancies', config)
+    return axios.get('http://localhost:8000/api/offers/', config)
         .then((response) => {
             console.log(response)
             return response

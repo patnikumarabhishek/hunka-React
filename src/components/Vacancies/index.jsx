@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { vacanciesActions } from '../../actions/vacanciesActions'
-const Vacancies = () => {
+const Vacancies = ({ getVacancies, token }) => {
+
+    useEffect(() => {
+        if (token.length !== 0) {
+            getVacancies(token)
+        }
+    },[])
+
     return (
         <section className="middle_wraper">
             {/* <div className="banner_area ">
@@ -85,7 +92,7 @@ const Vacancies = () => {
 
 function mapStateToProps(state) {
     console.log(state)
-    const { token, status } = state.vacancies;
+    const { token, status } = state.users;
     return { token,status };
 }
 
